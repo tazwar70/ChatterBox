@@ -163,6 +163,9 @@ button {
 	box-shadow: 5px 5px 10px #ebebeb,
 		-5px -5px 10px #ffffff;
 }
+#chat::-webkit-scrollbar {
+    width: 0px;
+}
 
 #messageForm {
 	margin-bottom: 25px;
@@ -198,6 +201,7 @@ button {
 
 .message-right .message-date {
 	color: transparent;
+	/* TODO made the date invisible to fix later */
 }
 
 .message-details {
