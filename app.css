@@ -163,6 +163,7 @@ button {
 	box-shadow: 5px 5px 10px #ebebeb,
 		-5px -5px 10px #ffffff;
 }
+/* webkit is used to customize scrollbar on chrome */
 #chat::-webkit-scrollbar {
     width: 0px;
 }
@@ -172,9 +173,11 @@ button {
 }
 
 #messageForm input,
-#messageForm button {
+#messageForm button,
+#loginForm input, #loginForm button {
 	color: var(--white);
 	font-size: 1.2rem;
+	margin: 5px;
 
 	border-radius: 22px;
 	background: #bd81cf;
@@ -200,7 +203,7 @@ button {
 }
 
 .message-right .message-date {
-	color: transparent;
+	color: white;
 	/* TODO made the date invisible to fix later */
 }
 

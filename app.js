@@ -31,7 +31,7 @@ createMessageHTML = message => {
 	}">
 		<div class="message-details flex">
 			<p class="flex-grow-1 message-author">${message.author}</p>
-			<p class="message-date">${message.date}</p>
+			<p class="message-date">${message.date.getHours()}:${message.date.getMinutes()} - ${message.date.getDate()}/${message.date.getMonth()}/${message.date.getFullYear()}</p>
 		</div>
 		<p class="message-content">${message.content}</p>
 	</div>
